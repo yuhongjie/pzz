@@ -80,4 +80,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # Do not use image_optim
+  config.assets.image_optim = false
+
+  config.i18n.available_locales = ['zh-CN', 'en', :de]
+  config.i18n.default_locale = 'en'
 end

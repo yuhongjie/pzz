@@ -6,6 +6,13 @@ GIT
     yaml_db (0.2.3)
 
 GIT
+  remote: git://github.com/konjoot/rails_admin_flatly_theme.git
+  revision: 0f70933dbc603d2f2f3b8ccb14e2f933aad95af6
+  specs:
+    rails_admin_flatly_theme (1.1.0)
+      rails (> 3.1.3)
+
+GIT
   remote: git://github.com/rails/activerecord-session_store.git
   revision: e879bf087eb684452aaddb734efa20b95588b141
   specs:
@@ -95,6 +102,7 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    enum_help (0.0.9)
     erubis (2.7.0)
     execjs (2.2.1)
     exifr (1.1.3)
@@ -150,6 +158,9 @@ GEM
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
+    paper_trail (3.0.5)
+      activerecord (>= 3.0, < 5.0)
+      activesupport (>= 3.0, < 5.0)
     paperclip (4.1.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -170,6 +181,7 @@ GEM
       rack (~> 1.1)
     rack-raw-upload (1.1.1)
       multi_json
+    rack-rewrite (1.5.0)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.1)
@@ -250,6 +262,7 @@ DEPENDENCIES
   cancan
   coffee-rails (~> 4.0.0)
   devise
+  enum_help
   font-awesome-rails
   gon
   image_optim
@@ -259,13 +272,16 @@ DEPENDENCIES
   kaminari
   masonry-rails
   mysql2
+  paper_trail (~> 3.0.5)
   paperclip (~> 4.1.1)
   paperclip-meta
   paperclip-optimizer
   puma
+  rack-rewrite (~> 1.5.0)
   rails (= 4.1.1)
   rails-i18n (~> 4.0.0)
   rails_admin!
+  rails_admin_flatly_theme!
   rails_admin_jcrop
   redis
   redis-queue

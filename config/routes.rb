@@ -1,4 +1,36 @@
 Rails.application.routes.draw do
+
+  resources :pzz_comments
+
+  resources :pzz_posts
+
+  mount Rich::Engine => '/rich', :as => 'rich'
+  resources :pzz_traffics
+
+  resources :pzz_links
+
+  resources :pzz_term_taxonomies
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
+  resources :pzz_draw_configs
+
+  resources :pzz_templates
+
+  resources :pzz_options
+
+  resources :pzz_messages
+
+  resources :pzz_identities
+
+  resources :pzz_cars
+
+  resources :pzz_orders
+
+  resources :pzz_lines
+
+  devise_for :pzz_users
+  
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

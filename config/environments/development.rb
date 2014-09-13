@@ -53,5 +53,8 @@ Rails.application.configure do
   # 需要配合Paperclip一起使用，暂时不启用
   config.assets.image_optim = false
 
+  config.i18n.available_locales = ['zh-CN', 'en', :de]
+  config.i18n.default_locale = 'en'
+
 
 end

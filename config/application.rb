@@ -19,5 +19,19 @@ module Pzz
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # paperclip
+    Paperclip.options[:command_path] = "/usr/bin/convert"
+
+
+    # rack_rewrite
+    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+      #rewrite   '/wiki/John_Trupiano',  '/john'
+      #r301      '/wiki/Yair_Flicker',   '/yair'
+      #r302      '/wiki/Greg_Jastrab',   '/greg'
+      #r301      %r{/wiki/(\w+)_\w+},    '/$1'
+    end
+
+    ENV['RAILS_ADMIN_THEME'] = 'flatly_theme'
   end
 end

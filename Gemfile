@@ -42,6 +42,10 @@ gem 'rich', :git => 'https://github.com/bastiaanterhorst/rich.git'
 
 # simple backend
 gem "rails_admin", :github => "sferik/rails_admin"
+gem 'rails_admin_flatly_theme', :git => 'git://github.com/konjoot/rails_admin_flatly_theme.git'
+
+# data version control
+gem 'paper_trail', '~> 3.0.5'
 
 # masonry
 gem 'masonry-rails'
@@ -83,6 +87,12 @@ gem 'puma'
 gem 'redis'
 # redis queue
 gem 'redis-queue'
+
+# url rewrite
+gem 'rack-rewrite', '~> 1.5.0'
+
+# make enum work with simple form and i18n
+gem 'enum_help'
 
 # pzz app gems end
 

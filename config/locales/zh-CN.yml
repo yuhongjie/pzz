@@ -1,0 +1,464 @@
+# Chinese (China) translations for Ruby on Rails
+# by tsechingho (http://github.com/tsechingho)
+# action -> model
+
+zh-CN:
+  website:
+    # options
+
+  # locale
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b%d日"
+      long: "%Y年%b%d日"
+    day_names:
+      - 星期日
+      - 星期一
+      - 星期二
+      - 星期三
+      - 星期四
+      - 星期五
+      - 星期六
+    abbr_day_names:
+      - 日
+      - 一
+      - 二
+      - 三
+      - 四
+      - 五
+      - 六
+    month_names:
+      - ~
+      - 一月
+      - 二月
+      - 三月
+      - 四月
+      - 五月
+      - 六月
+      - 七月
+      - 八月
+      - 九月
+      - 十月
+      - 十一月
+      - 十二月
+    abbr_month_names:
+      - ~
+      - 1月
+      - 2月
+      - 3月
+      - 4月
+      - 5月
+      - 6月
+      - 7月
+      - 8月
+      - 9月
+      - 10月
+      - 11月
+      - 12月
+    order:
+      - :year
+      - :month
+      - :day
+
+  time:
+    formats:
+      default: "%Y年%b%d日 %A %H:%M:%S %Z"
+      short: "%b%d日 %H:%M"
+      long: "%Y年%b%d日 %H:%M"
+    am: "上午"
+    pm: "下午"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "半分钟"
+      less_than_x_seconds:
+        one: "不到一秒"
+        other: "不到 %{count} 秒"
+      x_seconds:
+        one: "一秒"
+        other: "%{count} 秒"
+      less_than_x_minutes:
+        one: "不到一分钟"
+        other: "不到 %{count} 分钟"
+      x_minutes:
+        one: "一分钟"
+        other: "%{count} 分钟"
+      about_x_hours:
+        one: "大约一小时"
+        other: "大约 %{count} 小时"
+      x_days:
+        one: "一天"
+        other: "%{count} 天"
+      about_x_months:
+        one: "大约一个月"
+        other: "大约 %{count} 个月"
+      x_months:
+        one: "一个月"
+        other: "%{count} 个月"
+      about_x_years:
+        one: "大约一年"
+        other: "大约 %{count} 年"
+      over_x_years:
+        one: "一年多"
+        other: "%{count} 年多"
+      almost_x_years:
+        one:   "接近一年"
+        other: "接近 %{count} 年"
+    prompts:
+      year:   "年"
+      month:  "月"
+      day:    "日"
+      hour:   "时"
+      minute: "分"
+      second: "秒"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+    currency:
+      CNY: "元"
+      USD: "美元"
+      JPY: "日元"
+      JPY_SIGN: "¥"
+      format:
+        format: "%u %n"
+        unit: "CN¥"
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          total: "共"
+          jian: "件"
+          ci: "次"
+          # 10^-21 zepto, 10^-24 yocto
+          atto: "渺"  # 10^-18
+          femto: "飞" # 10^-15 毫微微
+          pico: "漠"  # 10^-12 微微
+          nano: "奈"  # 10^-9 毫微
+          micro: "微" # 10^-6
+          mili: "毫"  # 10^-3 milli
+          centi: "厘" # 10^-2
+          deci: "分"  # 10^-1
+          unit: ""
+          ten:
+            one: "十"
+            other: "十"  # 10^1
+          hundred: "百"  # 10^2
+          thousand: "千" # 10^3 kilo
+          million: "百万" # 10^6 mega
+          billion: "十亿" # 10^9 giga
+          trillion: "兆" # 10^12 tera
+          quadrillion: "千兆" # 10^15 peta
+          # 10^18 exa, 10^21 zetta, 10^24 yotta
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " 和 "
+      last_word_connector: ", 和 "
+    select:
+      prompt: "请选择"
+
+
+  activerecord:
+    models:
+      #here is for model name, for example, in rails_admin
+      # model name human
+    attributes:
+      # attributes human
+    errors:
+      models:
+        pzz_user:
+          attributes:
+            user_avatar:
+              blank: "不能为空"
+      template: # ~ 2.3.5 backward compatible
+        header:
+          one: "有 1 个错误发生导致「%{model}」无法被保存。"
+          other: "有 %{count} 个错误发生导致「%{model}」无法被保存。"
+        body: "如下字段出现错误："
+      full_messages:
+        format: "%{attribute} %{message}"
+      messages:
+        inclusion: "不包含于列表中"
+        exclusion: "是保留关键字"
+        invalid: "是无效的"
+        confirmation: "与确认值不匹配"
+        accepted: "必须是可被接受的"
+        empty: "不能留空"
+        blank: "不能为空"
+        too_long: "过长（最长为 %{count} 个字符）"
+        too_short: "过短（最短为 %{count} 个字符）"
+        wrong_length: "长度非法（必须为 %{count} 个字符）"
+        not_a_number: "不是数字"
+        not_an_integer: "必须是整数"
+        greater_than: "必须大于 %{count}"
+        greater_than_or_equal_to: "必须大于或等于 %{count}"
+        equal_to: "必须等于 %{count}"
+        less_than: "必须小于 %{count}"
+        less_than_or_equal_to: "必须小于或等于 %{count}"
+        odd: "必须为单数"
+        even: "必须为双数"
+        taken: "已经被使用"
+        record_invalid: "校验失败: %{errors}"
+
+  activemodel:
+    errors:
+      template:
+        header:
+          one: "有 1 个错误发生导致「%{model}」无法被保存。"
+          other: "有 %{count} 个错误发生导致「%{model}」无法被保存。"
+        body: "如下字段出现错误："
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      delete_message: "您确认删除么?"
+      exit_message: "您确认退出么?"
+      select_none: "您需要至少选择一件商品"
+      inclusion: "不包含于列表中"
+      exclusion: "是保留关键字"
+      invalid: "是无效的"
+      confirmation: "与确认值不匹配"
+      accepted: "必须是可被接受的"
+      empty: "不能留空"
+      blank: "不能为空字符"
+      too_long: "过长（最长为 %{count} 个字符）"
+      too_short: "过短（最短为 %{count} 个字符）"
+      wrong_length: "长度非法（必须为 %{count} 个字符）"
+      not_a_number: "不是数字"
+      not_an_integer: "必须是整数"
+      greater_than: "必须大于 %{count}"
+      greater_than_or_equal_to: "必须大于或等于 %{count}"
+      equal_to: "必须等于 %{count}"
+      less_than: "必须小于 %{count}"
+      less_than_or_equal_to: "必须小于或等于 %{count}"
+      odd: "必须为单数"
+      even: "必须为双数"
+
+  helpers:
+    select:
+      prompt: "请选择"
+    submit:
+      create: "新增%{model}"
+      update: "更新%{model}"
+      submit: "储存%{model}"
+
+  # devise
+  devise:
+    confirmations:
+      confirmed: "您的帐号已经确认，您现在已登录。"
+      send_instructions: "几分钟后，您将收到确认帐号的电子邮件。"
+      send_paranoid_instructions: "如果您的邮箱存在于我们的数据库中，您将收到一封确认账号的邮件。"
+    failure:
+      already_authenticated: "您已经登录。"
+      inactive: "您还没有激活帐户。"
+      invalid: "邮箱或密码错误。"
+      locked: "您的帐号已被锁定。"
+      last_attempt: "您还有最后一次尝试机会，再次失败您的账号将被锁定。"
+      not_found_in_database: "邮箱或密码错误。"
+      timeout: "您已登录超时，请重新登录。"
+      unauthenticated: "继续操作前请注册或者登录。"
+      unconfirmed: "继续操作前请先确认您的帐号。"
+    mailer:
+      confirmation_instructions:
+        subject: "确认信息"
+      reset_password_instructions:
+        subject: "重置密码信息"
+      unlock_instructions:
+        subject: "解锁信息"
+    omniauth_callbacks:
+      failure: "因为%{reason}，所以您无法从%{kind}获得授权。"
+      success: "成功地从%{kind}获得授权。"
+    passwords:
+      no_token: "这是密码重置页面，未重置邮件不得访问此页面。如果您是通过重置邮件而来的，请确保您访问的URL是完整的。"
+      send_instructions: "几分钟后，您将收到重置密码的电子邮件。"
+      send_paranoid_instructions: "如果您的邮箱存在于我们的数据库中，您将收到一封找回密码的邮件。"
+      updated: "您的密码已修改成功，您现在已登录。"
+      updated_not_active: "您的密码已修改成功。"
+    registrations:
+      destroyed: "再见！您的帐户已成功注销。我们希望很快可以再见到您。"
+      signed_up: "欢迎您！您已注册成功。"
+      signed_up_but_inactive: "您已注册，但尚未激活账号。"
+      signed_up_but_locked: "您已注册，但账号被锁定了。"
+      signed_up_but_unconfirmed: "一封带有确认链接的邮件已经发送至您的邮箱，请检查邮箱（包括垃圾邮箱），并点击该链接激活您的账号。"
+      update_needs_confirmation: "信息更新成功，但我们需要染整您的新电子邮件地址，请检查邮箱（包括垃圾邮箱），并点击该链接激活您的账号。"
+      updated: "帐号资料更新成功。"
+    sessions:
+      signed_in: "登录成功."
+      signed_out: "退出成功."
+    unlocks:
+      send_instructions: "几分钟后，您将收到一封解锁帐号的邮件。"
+      send_paranoid_instructions: "如果您的邮箱存在于我们的数据库中，您将收到一封解锁账号的邮件。"
+      unlocked: "您的帐号已成功解锁，您现在已登录。"
+  errors:
+    messages:
+      already_confirmed: "已经确认，请重新登录。"
+      confirmation_period_expired: "请在%{period}内确认注册, 请重新注册。"
+      expired: "邮件确认已过期，请重新注册。"
+      not_found: "没有找到。"
+      not_locked: "未锁定。"
+      not_saved:
+        one: "因为1个错误导致此%{resource}保存失败:"
+        other: "因为%{count}个错误导致此%{resource}保存失败:"
+
+  # rails_admin
+  admin:
+    actions:
+      bulk_delete:
+        breadcrumb: "删除多个条目"
+        bulk_link: "删除选中的 %{model_label_plural}"
+        menu: "删除多个条目"
+        title: "删除 %{model_label_plural}"
+      dashboard:
+        breadcrumb: "控制面板"
+        menu: "控制面板"
+        title: "站点管理"
+      delete:
+        breadcrumb: "删除"
+        done: "已删除"
+        link: "删除 '%{object_label}'"
+        menu: "删除"
+        title: "删除 %{model_label} '%{object_label}'"
+      edit:
+        breadcrumb: "编辑"
+        done: "已更新"
+        link: "编辑这个 %{model_label}"
+        menu: "编辑"
+        title: "编辑 %{model_label} '%{object_label}'"
+      export:
+        breadcrumb: "导出"
+        bulk_link: "导出选中的 %{model_label_plural}"
+        done: "已导出"
+        link: "导出找到的 %{model_label_plural}"
+        menu: "导出"
+        title: "导出%{model_label_plural}"
+      history_index:
+        breadcrumb: "操作历史"
+        menu: "操作历史"
+        title: "%{model_label_plural} 的操作历史"
+      history_show:
+        breadcrumb: "操作历史"
+        menu: "操作历史"
+        title: "%{model_label} '%{object_label}' 的操作历史"
+      index:
+        breadcrumb: "%{model_label_plural}"
+        menu: "列表"
+        title: "%{model_label_plural}列表"
+      new:
+        breadcrumb: "新建"
+        done: "已创建"
+        link: "新建%{model_label}"
+        menu: "创建新条目"
+        title: "新建%{model_label}"
+      show:
+        breadcrumb: "%{object_label}"
+        menu: "详情"
+        title: "%{model_label} '%{object_label}'详情"
+      show_in_app:
+        menu: "在应用程序中显示"
+    export:
+      click_to_reverse_selection: "单击以反向选择"
+      confirmation: "以 %{name} 格式导出"
+      csv:
+        col_sep: "栏分隔符"
+        col_sep_help: "留空则使用默认值('%{value}')"
+        default_col_sep: ","
+        encoding_to: "编码"
+        encoding_to_help: "选择输出字符编码。留空则保留当前输入字符编码：(%{name})"
+        header_for_association_methods: "%{name} [%{association}]"
+        header_for_root_methods: "%{name}"
+        skip_header: "无表头"
+        skip_header_help: "不输出表头（即无栏目描述）"
+      display: "显示%{name}: %{type}"
+      empty_value_for_associated_objects: "<空>"
+      fields_from: "%{name} 中的字段"
+      fields_from_associated: "关联的 %{name} 中的字段"
+      options_for: "%{name} 格式选项"
+      select: "选择要导出的字段"
+    flash:
+      error: "%{name} 不能被 %{action}"
+      model_not_found: "找不到模型’%{model}'"
+      noaction: "什么也没做"
+      object_not_found: "找不到序号为'%{id}'的模型%{model}"
+      successful: "成功 %{action} 了 %{name} "
+    form:
+      all_of_the_following_related_items_will_be_deleted: "下列相关条目将被删除或成为孤立条目"
+      are_you_sure_you_want_to_delete_the_object: "确认要删除这个 %{model_name} 么？"
+      basic_info: "基本信息"
+      bulk_delete: "下列对象将被删除，相关对象将被删除或成为孤立条目"
+      cancel: "取消"
+      char_length_of: "长度"
+      char_length_up_to: "最长"
+      confirmation: "是"
+      new_model: "%{name}（新）"
+      one_char: "字符"
+      optional: "可选"
+      required: "必填"
+      save: "保存"
+      save_and_add_another: "保存并新建另一个"
+      save_and_edit: "保存并继续编辑"
+    misc:
+      add_filter: "增加过滤条件"
+      add_new: "新建"
+      ago: "之前"
+      bulk_menu_title: "选中的条目"
+      chose_all: "全选"
+      chosen: "选择了%{name}"
+      clear_all: "全不选"
+      down: "下"
+      filter: "过滤条件"
+      filter_date_format: "月/日/年"
+      log_out: "注销"
+      navigation: "导航"
+      refresh: "刷新"
+      remove: "移除"
+      search: "搜索"
+      show_all: "显示全部"
+      up: "上"
+    table_headers:
+      changes: "改动"
+      created_at: "日期/时间"
+      item: "条目"
+      last_used: "最近使用"
+      message: "消息"
+      model_name: "（数据库）模型名称"
+      records: "记录"
+      username: "用户"
+    home:
+      name: "主页"
+    pagination:
+      next: "后一页 &raquo;"
+      previous: "&laquo; 前一页"
+      truncate: "……"
