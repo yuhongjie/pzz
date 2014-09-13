@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   resources :pzz_lines
 
   devise_for :pzz_users
-  
+
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

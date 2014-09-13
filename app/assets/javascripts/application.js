@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require canjs/can.jquery.js
+//= require canjs/can.ejs.js
+//= require canjs/can.fixture.js
 //= require masonry/jquery.masonry
 //= require masonry/jquery.event-drag
 //= require masonry/jquery.imagesloaded.min
