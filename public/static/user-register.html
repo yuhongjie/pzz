@@ -19,15 +19,15 @@
 </script>
 <script>
     $(document).ready(function(){
-        $("#mobile-psd").hide();
-        $("#mobile-rpsd").hide();
-        $("#mobile-verify").hide();
-        $("#mobile-name").hide();
+        // $("#mobile-psd").hide();
+        // $("#mobile-rpsd").hide();
+        // $("#mobile-verify").hide();
+        // $("#mobile-name").hide();
 
-        $("#mail-psd").hide();
-        $("#mail-rpsd").hide();
-        $("#mail-verify").hide();
-        $("#mail-name").hide();
+        // $("#mail-psd").hide();
+        // $("#mail-rpsd").hide();
+        // $("#mail-verify").hide();
+        // $("#mail-name").hide();
 
         $("#reg-mobile").show();
         $("#reg-mail").hide();
@@ -45,7 +45,8 @@
 
 <body>
 <div class="text-center m30">
-    <img src="images/logo.jpg"></div>
+    <a href="index.html"><img src="images/logo.jpg"></a>
+    </div>
 <div class="container ">
     <div class="row frame-border frame-bgw">
 
@@ -58,7 +59,7 @@
                 <div class="form-group m30">
                     <label for="inputMobile" class="col-xs-3 control-label">手机号码：</label>
                     <div class="col-xs-5">
-                        <input type="text" class="form-control frame-nradius" id="inputMobile" placeholder="手机号码">
+                        <input type="tel" class="form-control frame-nradius" id="inputMobile" placeholder="手机号码">
                     </div>
                     <span id="mobile-num" class="col-xs-4 f12 control-label tl">
                         亲，请输入真实有效手机号
@@ -74,6 +75,19 @@
 
                 </div>
                 </div>
+                <div class="form-group m30">
+                    <label for="" class="col-xs-3 control-label">短信验证：</label>
+                    <div class="col-xs-3">
+                        <input type="text" class="form-control frame-nradius" id="" placeholder=""></div>
+
+                    <div class="col-xs-2 register-mobile-verify">
+                        <button type="submit" class="btn btn-default frame-nradius" style="">获取验证码</button>
+                    </div>
+                     <span id="mobile-verify" class="col-xs-4 f12 crred control-label tl">
+                        <i class="fa fa-times-circle crred fa-lg mr5"></i>输入正确验证码
+                    </span>
+
+                </div>
                
 
                 <div class="form-group m30 ">
@@ -88,29 +102,17 @@
                     <label for="inputPassword" class="col-xs-3 control-label">确认密码：</label>
                     <div class="col-xs-5">
                         <input type="password" class="form-control frame-nradius" id="inputPassword" placeholder="确认密码"></div>
-                        <span id="mobile-rpsd" class="col-xs-4 crred f12 crred control-label tl"><i class="fa fa-lg cr5a fa-check-circle"></i>
+                        <span id="mobile-rpsd" class="col-xs-4 crred f12 cr5a control-label tl fa-check-circle"><i class="fa fa-lg cr5a fa-check-circle"></i>
                         
                     </span>
                 </div>
-                <div class="form-group m30">
-                    <label for="" class="col-xs-3 control-label">短信验证：</label>
-                    <div class="col-xs-3">
-                        <input type="text" class="form-control frame-nradius" id="" placeholder=""></div>
-
-                    <div class="col-xs-2 register-mobile-verify">
-                        <button type="submit" class="btn btn-default frame-nradius" style="">获取验证码</button>
-                    </div>
-                     <span id="mobile-verify" class="col-xs-4 f12 crred control-label tl">
-                        <i class="fa fa-times-circle crred fa-lg mr5"></i>输入正确验证码
-                    </span>
-
-                </div>
+                
                 <div class="form-group m30">
                     <label for="inputName" class="col-xs-3 control-label">姓名/昵称：</label>
                     <div class="col-xs-5">
                         <input type="text" class="form-control frame-nradius" id="inputName" placeholder="姓名/昵称"></div>
-                        <span id="mobile-name" class="col-xs-4 f12 crred control-label tl">
-                        <i class="fa fa-times-circle crred fa-lg mr5"></i>姓名或昵称不能为空
+                        <span id="mobile-name" class="col-xs-4 f12 crred control-label tl fa fa-times-circle">
+                        姓名或昵称不能为空
                     </span>
                 </div>
                 <div class="form-group m30">
@@ -165,16 +167,16 @@
                     <label for="inputPassword" class="col-xs-3 control-label">输入密码：</label>
                     <div class="col-xs-5">
                         <input type="password" class="form-control frame-nradius" id="inputPassword" placeholder="密码"></div>
-                        <span id="mail-psd" class="col-xs-4 f12 crred control-label tl">
-                        <i class="fa fa-times-circle crred fa-lg mr5"></i>输入密码
+                        <span id="mail-psd" class="col-xs-4 f12 crred control-label tl fa fa-times-circle">
+                        输入密码
                     </span>
                 </div>
                 <div class="form-group m30 ">
                     <label for="inputPassword" class="col-xs-3 control-label">确认密码：</label>
                     <div class="col-xs-5">
                         <input type="password" class="form-control frame-nradius" id="inputPassword" placeholder="确认密码"></div>
-                        <span id="mail-rpsd" class="col-xs-4 f12 crred control-label tl">
-                        <i class="fa fa-times-circle crred fa-lg mr5"></i>两次密码输入不一致
+                        <span id="mail-rpsd" class="col-xs-4 f12 crred control-label tl fa fa-times-circle">
+                        两次密码输入不一致
                     </span>
                 </div>
               <!--   <div class="form-group m30">
@@ -195,8 +197,8 @@
                     <label for="inputName" class="col-xs-3 control-label">姓名/昵称：</label>
                     <div class="col-xs-5">
                         <input type="text" class="form-control frame-nradius" id="inputName" placeholder="姓名/昵称"></div>
-                        <span id="mail-name" class="col-xs-4 f12 crred control-label tl">
-                        <i class="fa fa-times-circle crred fa-lg mr5"></i>姓名或昵称不能为空
+                        <span id="mail-name" class="col-xs-4 f12 crred control-label tl fa fa-times-circle">
+                        姓名或昵称不能为空
                     </span>
                 </div>
                 <div class="form-group m30">

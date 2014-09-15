@@ -10,6 +10,7 @@
   <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
   <!-- Custom Theme files -->
   <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -91,6 +92,9 @@
           <li>
             <a href="passenger-share.html">拼座分享</a>
           </li>
+          <li>
+            <a href="passenger-share.html">发布线路</a>
+          </li>
           <div class="clearfix"></div>
         </ul>
       </div>
@@ -98,38 +102,73 @@
       <!----//End-top-nav----> </div>
   </div>
     <!---- //End-header---->
-    <!-- banner  -->
-    <div id="banner" class="wmw">
-      <!-- <img class="img-responsive"  src="images/slide1.jpg" height="553" style="height:553px;"> -->
-      <div id="search" class="container" style="width:30%;">
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label for="originCar" class="col-sm-4 control-label">上车地点</label>
-            <div class="col-sm-4">
-              <input type="email" class="form-control" id="originCar" placeholder="出发城市">
-            </div>
-            <div class="col-sm-4">
-              <input type="email" class="form-control" id="originCar" placeholder="详细地址">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="destinationCar" class="col-sm-4 control-label">下车地点</label>
-            <div class="col-sm-4">
-              <input type="password" class="form-control" id="destinationCar" placeholder="目的城市">
-            </div>
-             <div class="col-sm-4">
-              <input type="password" class="form-control" id="destinationCar" placeholder="详细地址">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-primary">立即搜索</button>
-            </div>
-          </div>
-        </form>
-      </div>
+<!-- banner -->
+<div id="banner" class="banner-bg wmw home-search-banner h500" >
+<div id="myCarousel" class="carousel slide">
+<!-- 轮播（Carousel）指标 -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<!-- 轮播（Carousel）项目 -->
+<div class="carousel-inner">
+<div class="item active">
+    <img class="w h500"  src="images/slider6.jpg"  alt="First slide" ></div>
+<div class="item">
+    <img class="w h500" src="images/slider7.jpg"  alt="Second slide" ></div>
+<div class="item">
+    <img class="w h500" src="images/slider8.jpg"  alt="Third slide" ></div>
+</div>
+<!-- 轮播（Carousel）导航 -->
+<a class="carousel-control left" href="#myCarousel" 
+      data-slide="prev">&lsaquo;</a>
+<a class="carousel-control right" href="#myCarousel" 
+      data-slide="next">&rsaquo;</a>
+</div>
+<!-- <img class="img-responsive" src="images/slide1.jpg" height="553"
+                style="height:553px;">
+-->
+<!-- 发布线路 -->
+
+<div class="container home-search-route">
+<div id="search" style="background: rgba(0,0,0,0.3);">
+<form class="form-horizontal " role="form" style="margin:120px; padding: 30px 60px 10px 10px;">
+    <div class="form-group">
+        <label for="originCar" class="col-xs-2 control-label crfff">上车地点</label>
+        <div class="col-xs-4">
+            <input class="form-control" id="originCar" placeholder="出发城市"></div>
+        <div class="col-xs-6">
+            <input   class="form-control border-radius-style" id="dDestinationCityD" placeholder="详细地址">
+            <span onclick="mark('end')" class="r10 cr3b offer-position-icon fa fa-map-marker fa-lg form-control-feedback"></span>
+            <div id="searchdDestinationCityD" class="offer-map-detail"></div>
+        </div>
     </div>
-    <!-- banner end -->
+    <div class="form-group">
+        <label for="destinationCar" class="col-xs-2 control-label crfff">下车地点</label>
+        <div class="col-xs-4">
+            <input class="form-control" id="destinationCar" placeholder="目的城市"></div>
+        <div class="col-xs-6">
+            <input   class="form-control border-radius-style" id="dDestinationCityD" placeholder="详细地址">
+            <span onclick="mark('end')" class="cr3b r10 offer-position-icon fa fa-map-marker fa-lg form-control-feedback"></span>
+            <div id="searchdDestinationCityD" class="offer-map-detail"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+
+            <button type="search" class="btn btn-info text-btn">立即搜索</button>
+
+        </div>
+    </div>
+
+</form>
+</div>
+</div>
+<!-- search cotainer end  -->
+
+</div>
+<!-- banner end -->
     <div class="container" id="main">
       <div class="row" >
         <!-- left -->
@@ -383,10 +422,129 @@
                     </div>
                     <!-- right end -->
       </div>
+          <!-- friends-links -->
+          <div class="row">
+
+<div class=" page-list-bg p10 mt20 frame-border  friends-links" style="">
+<dl >
+    <dt class="cr333 mb10 f14">新手上路</dt>
+    <dd >
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+</dl>
+<dl>
+    <dt class="cr333 f14 mb10">新手上路</dt>
+    <dd >
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+</dl>
+<dl >
+    <dt class="cr333 f14 mb10">新手上路</dt>
+    <dd >
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+</dl>
+<dl >
+    <dt class="cr333 f14 mb10">新手上路</dt>
+    <dd >
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+</dl>
+<dl >
+    <dt class="cr333 f14 mb10">新手上路</dt>
+    <dd >
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+</dl>
+<dl>
+    <dt class="cr333 f14 mb10">新手上路</dt>
+    <dd >
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+    <dd>
+        <a class="cr999 f12 p5" href="">新手入门</a>
+    </dd>
+</dl>
+
+</div>
+
+</div>
+
+    <!-- friends-links end -->
     </div>
+
     <!-- main  end -->
-    <!-- footer start -->
-    <!-- footer end -->
+   <!-- footer start -->
+<div id="footer" class="text-center wmw p30 footer-bg" >
+<p>
+<a href="">关于拼座族</a>
+|
+<a href="">关于拼座族</a>
+|
+<a href="">关于拼座族</a>
+|
+<a href="">关于拼座族</a>
+|
+<a href="">关于拼座族</a>
+</p>
+<p>
+<a href="">
+Copyright Reserved 2007-2011 AA制拼车、搭乘顺风车，仅在AA拼车网（www.aapinche.cn） ICP备12001863号-3
+</a>
+</p>
+</div>
+<!-- footer end -->
   </div>
   <!-- wrapper -->
 
