@@ -16,7 +16,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</script>
+    <script type="text/javascript">
+         $(document).ready(function() {
+         $("#verifymobile").click(function() {
+                window.location.href="mail-reg-verifymobile.html"
+            });
+     });
+    </script>
 </head>
 
 <body>
@@ -85,7 +91,7 @@
 <span>yuhongjie@live.cn</span>
 发送了一封激活邮件，请点击邮件中的链接完成注册！
 </p>
-<button type="submit " class="btn btn-info btn-lg mt50 frame-nradius">立即进入邮箱</button>
+<button id="verifymobile" type="button " class="btn btn-info btn-lg mt50 frame-nradius">立即进入邮箱</button>
 </div>
 <div class="text-left m30  pb30">
 <H4> <i class="fa cr5b fa-lg fa-question mr15"></i>
@@ -103,6 +109,19 @@
 </div>
 </div>
 </div>
+    <!-- footer start -->
+<div id="footer" class="text-center wmw p30 " >
+    <div class="container frame-tborder ">
+    
+        <p class="pt20">
+            <a href="">
+           Copyright Reserved 2014-2015 拼座族拼车、搭乘顺风车，仅在拼座族网ICP备585858588
+            </a>
+            </p>
+    </div>
+
+</div>
+<!-- footer end -->
 </div>
 <!-- wrapper end -->
 

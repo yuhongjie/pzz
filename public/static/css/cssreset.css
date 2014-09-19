@@ -186,7 +186,7 @@ legend {
 .h100{height:100px}
 .h200{height:200px}
 .h300{height:300px}
-.h500{height: 500px}
+.h500{height: 500px!important}
 .h{height:100%}
 .r10{right: 10px !important}
 
@@ -197,6 +197,8 @@ legend {
 .m20{margin:20px}
 .m30{margin:30px}
 .m50{margin:50px}
+.m100{margin:100px}
+.m200{margin:200px}
 .mt5{margin-top:5px}
 .mt10{margin-top:10px}
 .mt15{margin-top:15px}
@@ -205,12 +207,15 @@ legend {
 .mt50{margin-top:50px}
 .mt100{margin-top:100px}
 .mt120{margin-top:120px}
+.mt150{margin-top:150px }
 .mb10{margin-bottom:10px}
 .mb15{margin-bottom:15px}
 .mb20{margin-bottom:20px}
 .mb30{margin-bottom:30px}
 .mb50{margin-bottom:50px}
 .mb100{margin-bottom:100px}
+.mb150{margin-bottom: 150px}
+.mb180{margin-bottom: 180px}
 .ml5{margin-left:5px}
 .ml10{margin-left:10px}
 .ml15{margin-left:15px}
@@ -218,6 +223,7 @@ legend {
 .ml30{margin-left:30px}
 .ml50{margin-left:50px}
 .ml100{margin-left:100px}
+.ml150{margin-left: 150px}
 .mr5{margin-right:5px}
 .mr10{margin-right:10px}
 .mr15{margin-right:15px}
@@ -225,6 +231,7 @@ legend {
 .mr30{margin-right:30px}
 .mr50{margin-right:50px}
 .mr100{margin-right:100px}
+.mr150{margin-right: 150px}
 .p2{padding:2px}
 .p10{padding:10px;}
 .p15{padding:15px;}
@@ -307,4 +314,7 @@ color: #449d44;
 }
 .cr9e{
 color:#9ED034;
+}
+.cref{
+	color:#efefef;
 }
