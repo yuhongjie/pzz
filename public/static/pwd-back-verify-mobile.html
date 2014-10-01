@@ -16,6 +16,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+            $(document).ready(function() {
+                $("#new-pwd").click(function() {
+                    window.location.href = "pwd-back-newpwd.html"
+                });
+            });
+        </script>
 </head>
 
 <body>
@@ -125,7 +132,7 @@
                                     </div>
                                     <div class="form-group mt30">
                                          <div class="col-xs-offset-3 col-xs-2">
-                                            <button type="submit" class="btn   btn-info w frame-nradius">立即绑定</button>
+                                            <button id="new-pwd" type="button" class="btn   btn-info w frame-nradius">确定</button>
                                            
                                         </div>
                                         <div class="col-xs-3 pt10 com-block">
